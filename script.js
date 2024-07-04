@@ -1,20 +1,27 @@
-let slideIndex = 0;
-const slides = document.querySelector('.slides');
-const totalSlides = document.querySelectorAll('.slide').length;
+const left = document.querySelector(".left");
+const right = document.querySelector(".right");
+const slides = document.querySelector(".slides");
+const images = document.querySelectorAll(".image");
+const lengthOfImages = images.length;
+let currentIndex = 0;
 
-function moveSlide(n) {
-    slideIndex += n;
+right.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % lengthOfImages;
+    updateSlide();
+});
 
-    if (slideIndex < 0) {
-        slideIndex = totalSlides - 1;
-    } else if (slideIndex >= totalSlides) {
-        slideIndex = 0;
-    }
+left.addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + lengthOfImages) % lengthOfImages;
+    updateSlide();
+});
 
-    const offset = -slideIndex * 100;
+function updateSlide() {
+    const offset = -currentIndex * 100;
     slides.style.transform = `translateX(${offset}%)`;
 }
 
-// Example of how to use the function
-document.querySelector('.prev').addEventListener('click', () => moveSlide(-1));
-document.querySelector('.next').addEventListener('click', () => moveSlide(1));
+// Automatically update the slide every 1 second
+setInterval(() => {
+    currentIndex = (currentIndex + 1) % lengthOfImages;
+    updateSlide();
+}, 5000);

@@ -11,6 +11,8 @@ body {
     font-weight: 100;
     font-style: normal;
 }
+
+/* heading and navbar  */
 .navbar {
     background-color: #0e413f;
     display: flex;
@@ -19,6 +21,8 @@ body {
     height:60px;
     box-shadow: 10px 5px 5px rgb(116, 182, 176);
 }
+
+/* left navbar  */
 .left-navbar{
     color: white;
     font-family:'Times New Roman', Times, serif;
@@ -50,15 +54,16 @@ body {
 }
 
 .left-hero {
-    border: 2px solid black;
+    /* border: 2px solid black; */
+
     padding: 10px;
-    margin: 5px;
+    margin-left: 25px;
     text-align: center;
     width: 39%;
 }
 
 .right-hero {
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     width: 60%;
     padding: 10px;
 }
@@ -101,23 +106,23 @@ body {
     border: 2px solid #ddd;
     border-radius: 10px;
     background: #a9e4d4;
-  }
-  
-  .slides {
+}
+
+.slides {
     display: flex;
-    transition: all 0.5s ease-in-out;
-  }
-  
-  .slide {
+    transition:all 3s ease-in ;
+}
+
+.image {
     min-width: 100%;
-  }
-  
-  .slide img {
+}
+
+.image img {
     width: 100%;
     border-radius: 10px;
-  }
-  
-  .prev, .next {
+}
+
+.prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -130,16 +135,25 @@ body {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-  }
-  
-  .next {
+}
+
+.next {
     right: 0;
     border-radius: 2px 0 0 3px;
-  }
-  
-  .prev:hover, .next:hover {
+}
+
+.prev:hover, .next:hover {
     background-color: rgba(89, 207, 183, 0.592);
-  }
+}
 
+.right-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.arrow {
+    cursor: pointer;
+    height: 30px;
+}
 
