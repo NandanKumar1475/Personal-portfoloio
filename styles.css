@@ -6,7 +6,8 @@
 }
 
 body {
-    background-color: #719593;
+    /* background-color: #719593; */
+    background-color: rgb(4, 16, 34);
     font-family: "Poppins", sans-serif;
     font-weight: 100;
     font-style: normal;
@@ -14,12 +15,12 @@ body {
 
 /* heading and navbar  */
 .navbar {
-    background-color: #0e413f;
+    background-color: #022350;
     display: flex;
     justify-content: space-around;
     align-items: center;
     height:60px;
-    box-shadow: 10px 5px 5px rgb(116, 182, 176);
+    box-shadow: 10px 5px 5px rgb(56, 56, 187);
 }
 
 /* left navbar  */
@@ -157,3 +158,9 @@ body {
     height: 30px;
 }
 
+/* animated typing  */
+#element{
+    color: rgba(148, 175, 174, 0.848);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 300;
+}

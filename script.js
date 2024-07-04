@@ -25,3 +25,9 @@ setInterval(() => {
     currentIndex = (currentIndex + 1) % lengthOfImages;
     updateSlide();
 }, 5000);
+
+// typing animiation code 
+var typed = new Typed('#element', {
+    strings: ['<h4>Fronted Developer</h4>.', '&amp; <h4>Full Stack Developer</h4>.','<h4>MERN Developer </h4>','<h4>Video Editior</h4>'],
+    typeSpeed: 50,
+  });
