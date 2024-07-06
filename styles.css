@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
-    scroll-behavior: smooth ;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -24,6 +24,11 @@ body {
     box-shadow: 10px 5px 5px rgb(56, 56, 187);
 } */
 
+section {
+    margin: 10px;
+    padding: 10px;
+}
+
 .navbar {
     background-color: #022350;
     display: flex;
@@ -34,14 +39,15 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; /* Ensure it stays above other content */
+    z-index: 1000;
+    /* Ensure it stays above other content */
 }
 
 
 /* left navbar  */
-.left-navbar{
+.left-navbar {
     color: white;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: large;
     font-weight: 500;
 }
@@ -54,7 +60,7 @@ body {
 
 .right-navbar ul li a {
     color: whitesmoke;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: large;
     font-weight: 500;
     padding: 10px;
@@ -63,6 +69,7 @@ body {
     margin: 5px;
 
 }
+
 .hero-container {
     padding: 20px;
     margin: 25px;
@@ -105,13 +112,14 @@ body {
     border-radius: 25px;
     color: #00a9e0;
     font-weight: bold;
-    
+
 }
 
 .btn-get-started a {
     text-decoration: none;
-    padding-bottom:  10px;
+    padding-bottom: 10px;
 }
+
 /* slider designing  */
 .slider {
     position: relative;
@@ -126,7 +134,7 @@ body {
 
 .slides {
     display: flex;
-    transition:all 3s ease-in ;
+    transition: all 3s ease-in;
 }
 
 .image {
@@ -138,7 +146,8 @@ body {
     border-radius: 10px;
 }
 
-.prev, .next {
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -158,7 +167,8 @@ body {
     border-radius: 2px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
     background-color: rgba(89, 207, 183, 0.592);
 }
 
@@ -174,58 +184,95 @@ body {
 }
 
 /* animated typing  */
-#element{
+#element {
     color: rgba(148, 175, 174, 0.848);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 300;
 }
-hr{
+
+hr {
     border: 0.5px solid rgba(170, 195, 210, 0.47);
 }
 
+/* work experience design  */
+.work-experience {
+    color: whitesmoke;
+    margin: 30px;
+    padding: 10px;
+    height: max-content;
+}
+
+.work-experience h2 {
+    text-align: center;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px;
+    padding: 5px;
+}
+
+.work-experience p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.intern {
+    margin: 10px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px auto;
+
+}
+
 /* about us page  */
-.about-heading{
+.about-heading {
     color: white;
     text-align: center;
     font-size: 25px;
     margin: 5px;
-    
+
 }
-.aboutUs{
+
+.aboutUs {
     text-align: center;
     color: wheat;
 }
-.aboutPage{
+
+.aboutPage {
     display: flex;
     justify-content: space-around;
 }
 
 .education {
-    margin: 40px ;
+    margin: 40px;
     padding: 20px;
     /* background-color: #68788a; */
     box-shadow: 0 0 10px rgba(52, 43, 43, 0.5);
 }
+
 .education h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     margin-bottom: 20px;
     font-size: 2em;
-    color:whitesmoke
+    color: whitesmoke
 }
 
 .education-list {
     list-style: none;
     padding: 0;
-    
+
 }
 
 .education-item {
     margin-bottom: 20px;
     padding: 10px;
-    
+
 }
 
 .education-item h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     font-size: 1.5em;
     color: rgb(227, 220, 220);
@@ -235,6 +282,7 @@ hr{
     margin: 5px 0;
     font-size: 1em;
     color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .education-duration {
@@ -248,12 +296,15 @@ hr{
     margin: 50px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(52, 43, 43, 0.5);
+
 }
+
 .projects h2 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 2em;
     color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .projects-list {
@@ -268,48 +319,66 @@ hr{
 
 .projects-item h3 {
     margin: 0;
-    font-size: 1.5em;
+    font-size: 1.8em;
     color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .projects-item p {
     margin: 5px 0;
     font-size: 1em;
     color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .projects-duration {
     display: block;
-    font-size: 0.9em;
+    font-size: 0.8em;
     color: white;
+    margin: 10px;
+}
+
+.hr-line {
+    width: 20%;
+    /* Fixed length, e.g., 50% of the container's width */
+    margin: 0 auto;
+    /* Centering the line */
+
 }
 
 
 /* skil design  */
-.skills{
+.skills {
     /* border: 2px solid red; */
     color: whitesmoke;
     width: 45%;
     margin-top: 30px;
     box-shadow: 0 0 10px rgba(52, 43, 43, 0.5);
 
+
 }
+
 .skills h2 {
     text-align: center;
     margin: 5px;
     padding: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.skills-item{
+
+.skills-item {
     display: flex;
     justify-content: space-between;
     margin: 10px;
-    pad: 10px;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 .skills-list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
+
 .skills-item {
     margin-bottom: 20px;
 }
@@ -322,11 +391,13 @@ hr{
     overflow: hidden;
     height: 15px;
 }
+
 .skill-level {
     height: 100%;
     background-color: #3476bc;
     transition: width 1s;
 }
+
 .skills-item:hover .skill-level {
     background-color: #123459;
 }
