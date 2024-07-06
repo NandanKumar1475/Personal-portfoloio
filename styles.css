@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -7,22 +8,62 @@
 }
 
 body {
-    /* background-color: #719593; */
     background-color: rgb(4, 16, 34);
     font-family: "Poppins", sans-serif;
     font-weight: 100;
     font-style: normal;
+    line-height: 1.6;
+    color: #fff;
 }
 
-/* heading and navbar  */
-/* .navbar {
-    background-color: #022350;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height:60px;
-    box-shadow: 10px 5px 5px rgb(56, 56, 187);
-} */
+/* .navbar */
+
+
+@media (max-width: 1200px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 992px) {
+    header h1 {
+        font-size: 1.6em;
+    }
+
+    main {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.4em;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    main {
+        padding: 5px;
+    }
+
+    footer p {
+        font-size: 0.8em;
+    }
+}
+
+
 
 section {
     margin: 10px;
@@ -40,8 +81,8 @@ section {
     top: 0;
     width: 100%;
     z-index: 1000;
-    /* Ensure it stays above other content */
 }
+
 
 
 /* left navbar  */
@@ -67,13 +108,45 @@ section {
     text-decoration: none;
     list-style: none;
     margin: 5px;
-    transition: background-color 0.3s ease, font-size 0.3s ease; /* Smooth transition for background-color and font-size */
+    transition: background-color 0.3s ease, font-size 0.3s ease;
+    /* Smooth transition for background-color and font-size */
 
 }
 
 .right-navbar ul li a:hover {
-    background-color: rgb(66, 141, 216); /* Background color change on hover */
-    font-size: 20px; /* Font size change on hover */
+    background-color: rgb(66, 141, 216);
+    /* Background color change on hover */
+    font-size: 20px;
+    /* Font size change on hover */
+}
+
+/* resposiveness navbar  */
+
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        /* Adjust height as needed for smaller screens */
+    }
+
+    .right-navbar {
+        display: none;
+        /* Hide right navbar links on small screens */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #022350;
+        width: 100%;
+        text-align: center;
+    }
+
+    .right-navbar.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right-navbar ul li {
+        margin: 10px 0;
+    }
 }
 
 .hero-container {
@@ -81,6 +154,7 @@ section {
     margin: 25px;
     display: flex;
 }
+
 
 .left-hero {
     /* border: 2px solid black; */
@@ -109,6 +183,7 @@ section {
     margin-top: 30px;
     line-height: 1.2;
 }
+
 .btn-get-started {
     display: inline-block;
     background-color: white;
@@ -133,6 +208,7 @@ section {
     border-radius: 10px;
     background: #a9e4d4;
 }
+
 
 .slides {
     max-height: 450px;
@@ -206,6 +282,7 @@ hr {
     height: max-content;
 }
 
+
 .work-experience h2 {
     text-align: center;
     font-size: 30px;
@@ -229,6 +306,76 @@ hr {
 
 }
 
+
+/* Responsive Design for Work Experience Section */
+@media (max-width: 1200px) {
+    .work-experience h2 {
+        font-size: 28px;
+    }
+
+    .work-experience p {
+        font-size: 18px;
+        margin-left: 25px;
+    }
+
+    .intern {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 992px) {
+    .work-experience h2 {
+        font-size: 26px;
+    }
+
+    .work-experience p {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
+    .intern {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .work-experience h2 {
+        font-size: 24px;
+        margin: 8px;
+        padding: 4px;
+    }
+
+    .work-experience p {
+        font-size: 14px;
+        margin-top: 8px;
+        margin-left: 15px;
+    }
+
+    .intern {
+        font-size: 14px;
+        margin: 8px auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .work-experience h2 {
+        font-size: 22px;
+        margin: 6px;
+        padding: 3px;
+    }
+
+    .work-experience p {
+        font-size: 12px;
+        margin-top: 6px;
+        margin-left: 10px;
+    }
+
+    .intern {
+        font-size: 12px;
+        margin: 6px auto;
+    }
+}
+
 /* about us page  */
 .about-heading {
     color: white;
@@ -237,11 +384,13 @@ hr {
     margin: 5px;
 
 }
+
 .aboutme-hr {
     width: 12%;
     margin: 0 auto;
     border: 1.5px solid rgb(67, 109, 225);
-    border-radius: 20px; /* Corrected */
+    border-radius: 20px;
+    /* Corrected */
 }
 
 .aboutUs {
@@ -252,6 +401,56 @@ hr {
 .aboutPage {
     display: flex;
     justify-content: space-around;
+}
+
+/* Responsive Design for About Us Page */
+@media (max-width: 1200px) {
+    .about-heading {
+        font-size: 23px;
+    }
+
+    .aboutme-hr {
+        width: 15%;
+    }
+}
+
+@media (max-width: 992px) {
+    .about-heading {
+        font-size: 21px;
+    }
+
+    .aboutme-hr {
+        width: 18%;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-heading {
+        font-size: 19px;
+    }
+
+    .aboutme-hr {
+        width: 20%;
+    }
+
+    .aboutPage {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-heading {
+        font-size: 17px;
+    }
+
+    .aboutme-hr {
+        width: 25%;
+    }
+
+    .aboutUs {
+        font-size: 14px;
+    }
 }
 
 .education {
@@ -354,7 +553,8 @@ hr {
     width: 15%;
     margin: 0 auto;
     border: 1.5px solid rgb(67, 109, 225);
-    border-radius: 20px; /* Corrected */
+    border-radius: 20px;
+    /* Corrected */
 
 }
 
@@ -416,58 +616,88 @@ hr {
 }
 
 /* additional-information */
-.additional-information{
+.additional-information {
     color: white;
     display: flex;
-   
+
 }
-.additional{
+
+.additional {
     width: 33%;
     margin: 10px;
     box-shadow: 0 0 10px rgba(199, 142, 142, 0.8);
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .additional hr {
     width: 80%;
     margin: 0 auto;
 
 }
+
 .additional h2 {
     margin: 10px;
     text-align: center;
 }
+
 .additional ul {
-   list-style-type: none;
-   padding: 0;
+    list-style-type: none;
+    padding: 0;
 }
-.additional img{
+
+.additional img {
     /* box-shadow: 0 0 10px rgba(26, 122, 200, 0.8); */
     border: 2px solid rgb(101, 115, 220);
     border-radius: 20px;
 
-    
+
 }
+
+@media (max-width: 1200px) {
+    .additional {
+        width: 45%;
+    }
+}
+
+@media (max-width: 992px) {
+    .additional {
+        width: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+    .additional {
+        width: 100%;
+        margin: 10px 0;
+        /* Adjust margin for full-width items */
+    }
+}
+
 #certification ul li {
     margin: 10px;
     padding: 5px;
     text-align: center;
-   
- }
-#achivement{
+
+}
+
+#achivement {
     margin: 10px;
     padding: 5px;
     text-align: center;
 }
+
 #achivement ul li {
     margin: 10px;
     padding: 5px;
     text-align: center;
 }
-#hobbies{
+
+#hobbies {
     margin: 10px;
     padding: 5px;
     text-align: center;
 }
+
 #hobbies ul li {
     margin: 20px;
     padding: 15px;
@@ -475,23 +705,104 @@ hr {
 
 }
 
+/* Responsive Design for Certification, Achievement, and Hobbies Sections */
+@media (max-width: 1200px) {
+
+    #certification ul li,
+    #achivement ul li,
+    #hobbies ul li {
+        font-size: 1em;
+        margin: 8px;
+        padding: 4px;
+    }
+
+    #achivement,
+    #hobbies {
+        margin: 8px;
+        padding: 4px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    #certification ul li,
+    #achivement ul li,
+    #hobbies ul li {
+        font-size: 0.9em;
+        margin: 6px;
+        padding: 3px;
+    }
+
+    #achivement,
+    #hobbies {
+        margin: 6px;
+        padding: 3px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #certification ul li,
+    #achivement ul li,
+    #hobbies ul li {
+        font-size: 0.8em;
+        margin: 5px;
+        padding: 2px;
+    }
+
+    #achivement,
+    #hobbies {
+        margin: 5px;
+        padding: 2px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    #certification ul li,
+    #achivement ul li,
+    #hobbies ul li {
+        font-size: 0.7em;
+        margin: 4px;
+        padding: 2px;
+    }
+
+    #achivement,
+    #hobbies {
+        margin: 4px;
+        padding: 2px;
+    }
+}
+
+@media (max-width: 768px) {
+    #achivement {
+        width: 90%;
+    }
+
+    #achivement img {
+        height: auto;
+    }
+}
+
 /* hiew me button  */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.btn{
+
+.btn {
     background-color: #e84949;
     padding: 0.8rem 2.3rem;
     color: white;
-    font-size:18px;
+    font-size: 18px;
     box-shadow: 5px 5px 7px 0px #0000003f;
-    position: relative ;
-    z-index: 1;  
+    position: relative;
+    z-index: 1;
 
 }
-.btn::before{
+
+.btn::before {
     content: "";
     background-color: #1f1f1f;
     position: absolute;
@@ -505,11 +816,58 @@ hr {
     z-index: -1;
 
 }
-.btn:hover::before{
+
+.btn:hover::before {
     transform: scaleX(1);
 
 }
-a{
+
+a {
     text-decoration: none;
     color: white;
+}
+
+/* footer design  */
+footer {
+    background-color: #333;
+    /* Example background color for the footer */
+    color: #fff;
+    /* Example text color for the footer */
+    padding: 20px 0;
+    /* Example padding for top and bottom spacing */
+    text-align: center;
+    /* Center align text */
+}
+
+footer .foter {
+    max-width: 1200px;
+    /* Maximum width for the footer content */
+    margin: 0 auto;
+    /* Center the footer content horizontally */
+    padding: 0 20px;
+    /* Example padding for left and right spacing */
+}
+
+footer .foter p {
+    margin: 0;
+    /* Remove default margin */
+    font-size: 14px;
+    /* Example font size for footer text */
+    color: white;
+    /* Example color for footer text */
+    padding: 3px;
+
+}
+
+footer .foter a {
+    color: #7059e4;
+    /* Example color for footer links */
+    text-decoration: none;
+    /* Remove underline from links */
+    font-size: 15px;
+}
+
+footer .foter a:hover {
+    text-decoration: underline;
+    /* Underline links on hover */
 }
