@@ -164,3 +164,107 @@ body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 300;
 }
+hr{
+    border: 0.5px solid rgba(170, 195, 210, 0.47);
+}
+
+/* about us page  */
+.about-heading{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    margin: 5px;
+    
+}
+.aboutUs{
+    text-align: center;
+    color: wheat;
+}
+.aboutPage{
+    display: flex;
+    justify-content: space-around;
+}
+
+.education {
+    margin: 50px auto;
+    padding: 20px;
+    /* background-color: #68788a; */
+    box-shadow: 0 0 10px rgba(52, 43, 43, 0.5);
+}
+.education h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color:whitesmoke
+}
+
+.education-list {
+    list-style: none;
+    padding: 0;
+    
+}
+
+.education-item {
+    margin-bottom: 20px;
+    
+}
+
+.education-item h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: rgb(227, 220, 220);
+}
+
+.education-item p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: white;
+}
+
+.education-duration {
+    display: block;
+    font-size: 0.9em;
+    color: white
+}
+
+/* PROJECT DESIGN  */
+.projects {
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(52, 43, 43, 0.5);
+}
+.projects h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: white;
+}
+
+.projects-list {
+    list-style: none;
+    padding: 0;
+}
+
+.projects-item {
+    margin-bottom: 20px;
+}
+
+.projects-item h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: whitesmoke;
+}
+
+.projects-item p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: white;
+}
+
+.projects-duration {
+    display: block;
+    font-size: 0.9em;
+    color: white;
+}
+
+
