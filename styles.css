@@ -829,45 +829,67 @@ a {
 
 /* footer design  */
 footer {
-    background-color: #333;
-    /* Example background color for the footer */
+    background-color: #272424;
     color: #fff;
-    /* Example text color for the footer */
     padding: 20px 0;
-    /* Example padding for top and bottom spacing */
     text-align: center;
-    /* Center align text */
 }
 
-footer .foter {
+footer .footer {
     max-width: 1200px;
-    /* Maximum width for the footer content */
     margin: 0 auto;
-    /* Center the footer content horizontally */
     padding: 0 20px;
-    /* Example padding for left and right spacing */
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 
-footer .foter p {
+footer .footer p {
     margin: 0;
-    /* Remove default margin */
     font-size: 14px;
-    /* Example font size for footer text */
     color: white;
-    /* Example color for footer text */
     padding: 3px;
-
 }
 
-footer .foter a {
+footer .footer a {
     color: #7059e4;
-    /* Example color for footer links */
     text-decoration: none;
-    /* Remove underline from links */
     font-size: 15px;
 }
 
-footer .foter a:hover {
+footer .footer a:hover {
+    color: blue;
     text-decoration: underline;
-    /* Underline links on hover */
 }
+
+.personal-information {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.info {
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.3);
+    width: 45%; /* Adjust width as needed */
+}
+
+.info a{
+   color: rgb(131, 131, 199);
+}
+
+.info ul {
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.info ul li {
+    list-style-type: none;
+}
+
+
+.legal {
+    margin-top: 20px;
+}
+
