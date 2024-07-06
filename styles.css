@@ -186,7 +186,7 @@ hr{
 }
 
 .education {
-    margin: 50px auto;
+    margin: 40px ;
     padding: 20px;
     /* background-color: #68788a; */
     box-shadow: 0 0 10px rgba(52, 43, 43, 0.5);
@@ -206,6 +206,7 @@ hr{
 
 .education-item {
     margin-bottom: 20px;
+    padding: 10px;
     
 }
 
@@ -229,7 +230,7 @@ hr{
 
 /* PROJECT DESIGN  */
 .projects {
-    margin: 50px auto;
+    margin: 50px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(52, 43, 43, 0.5);
 }
@@ -247,6 +248,7 @@ hr{
 
 .projects-item {
     margin-bottom: 20px;
+    padding: 15px;
 }
 
 .projects-item h3 {
@@ -268,3 +270,48 @@ hr{
 }
 
 
+/* skil design  */
+.skills{
+    /* border: 2px solid red; */
+    color: whitesmoke;
+    width: 45%;
+    margin-top: 30px;
+    box-shadow: 0 0 10px rgba(52, 43, 43, 0.5);
+
+}
+.skills h2 {
+    text-align: center;
+    margin: 5px;
+    padding: 15px;
+}
+.skills-item{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    pad: 10px;
+}
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.skills-item {
+    margin-bottom: 20px;
+}
+
+/* skill bar design  */
+.skill-bar {
+    width: 70%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 15px;
+}
+.skill-level {
+    height: 100%;
+    background-color: #3476bc;
+    transition: width 1s;
+}
+.skills-item:hover .skill-level {
+    background-color: #123459;
+}
