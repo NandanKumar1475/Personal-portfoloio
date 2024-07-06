@@ -67,7 +67,13 @@ section {
     text-decoration: none;
     list-style: none;
     margin: 5px;
+    transition: background-color 0.3s ease, font-size 0.3s ease; /* Smooth transition for background-color and font-size */
 
+}
+
+.right-navbar ul li a:hover {
+    background-color: rgb(66, 141, 216); /* Background color change on hover */
+    font-size: 20px; /* Font size change on hover */
 }
 
 .hero-container {
@@ -233,6 +239,12 @@ hr {
     margin: 5px;
 
 }
+.aboutme-hr {
+    width: 12%;
+    margin: 0 auto;
+    border: 1.5px solid rgb(67, 109, 225);
+    border-radius: 20px; /* Corrected */
+}
 
 .aboutUs {
     text-align: center;
@@ -339,10 +351,10 @@ hr {
 }
 
 .hr-line {
-    width: 20%;
-    /* Fixed length, e.g., 50% of the container's width */
+    width: 15%;
     margin: 0 auto;
-    /* Centering the line */
+    border: 1.5px solid rgb(67, 109, 225);
+    border-radius: 20px; /* Corrected */
 
 }
 
@@ -400,4 +412,54 @@ hr {
 
 .skills-item:hover .skill-level {
     background-color: #123459;
+}
+
+/* additional-information */
+.additional-information{
+    border: 2px solid red;
+    height: 350px;
+    color: white;
+    display: flex;
+   
+}
+.additional{
+    width: 33%;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(199, 142, 142, 0.8);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.additional hr {
+    width: 80%;
+    margin: 0 auto;
+
+}
+.additional h2 {
+    margin: 10px;
+    text-align: center;
+}
+.additional ul {
+   list-style-type: none;
+   padding: 0;
+}
+#certification ul li {
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+   
+ }
+#achivement{
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
+#achivement ul li {
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
+#hobbies ul li {
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+
 }
