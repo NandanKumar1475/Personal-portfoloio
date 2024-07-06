@@ -109,13 +109,9 @@ section {
     margin-top: 30px;
     line-height: 1.2;
 }
-
 .btn-get-started {
     display: inline-block;
     background-color: white;
-    padding: 10px 20px;
-    border: 2px solid rgba(70, 173, 131, 0.63);
-    border-radius: 25px;
     color: #00a9e0;
     font-weight: bold;
 
@@ -139,12 +135,14 @@ section {
 }
 
 .slides {
+    max-height: 450px;
     display: flex;
     transition: all 3s ease-in;
 }
 
 .image {
     min-width: 100%;
+    box-shadow: 0 0 10px rgba(199, 142, 142, 0.8);
 }
 
 .image img {
@@ -260,7 +258,8 @@ hr {
     margin: 40px;
     padding: 20px;
     /* background-color: #68788a; */
-    box-shadow: 0 0 10px rgba(52, 43, 43, 0.5);
+    /* box-shadow: 0 0 10px rgba(52, 43, 43, 0.5); */
+    box-shadow: 0 0 10px rgba(199, 142, 142, 0.8);
 }
 
 .education h2 {
@@ -307,7 +306,8 @@ hr {
 .projects {
     margin: 50px;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(52, 43, 43, 0.5);
+    /* box-shadow: 0 0 10px rgba(52, 43, 43, 0.5); */
+    box-shadow: 0 0 10px rgba(199, 142, 142, 0.8);
 
 }
 
@@ -365,7 +365,8 @@ hr {
     color: whitesmoke;
     width: 45%;
     margin-top: 30px;
-    box-shadow: 0 0 10px rgba(52, 43, 43, 0.5);
+    /* box-shadow: 0 0 10px rgba(52, 43, 43, 0.5); */
+    box-shadow: 0 0 10px rgba(199, 142, 142, 0.8);
 
 
 }
@@ -416,8 +417,6 @@ hr {
 
 /* additional-information */
 .additional-information{
-    border: 2px solid red;
-    height: 350px;
     color: white;
     display: flex;
    
@@ -441,6 +440,13 @@ hr {
    list-style-type: none;
    padding: 0;
 }
+.additional img{
+    /* box-shadow: 0 0 10px rgba(26, 122, 200, 0.8); */
+    border: 2px solid rgb(101, 115, 220);
+    border-radius: 20px;
+
+    
+}
 #certification ul li {
     margin: 10px;
     padding: 5px;
@@ -457,9 +463,53 @@ hr {
     padding: 5px;
     text-align: center;
 }
-#hobbies ul li {
+#hobbies{
     margin: 10px;
     padding: 5px;
     text-align: center;
+}
+#hobbies ul li {
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
 
+}
+
+/* hiew me button  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.btn{
+    background-color: #e84949;
+    padding: 0.8rem 2.3rem;
+    color: white;
+    font-size:18px;
+    box-shadow: 5px 5px 7px 0px #0000003f;
+    position: relative ;
+    z-index: 1;  
+
+}
+.btn::before{
+    content: "";
+    background-color: #1f1f1f;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 1s;
+    z-index: -1;
+
+}
+.btn:hover::before{
+    transform: scaleX(1);
+
+}
+a{
+    text-decoration: none;
+    color: white;
 }
