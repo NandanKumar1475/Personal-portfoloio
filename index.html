@@ -34,7 +34,8 @@
                         <li><a href="#projects">Projects</a></li>
                         <li><a href="#internship">Work-Experience</a></li>
                         <li><a href="#resume">Resume</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#" onclick="openContactModal()">Contact</a></li>
+
                     </ul>
                 </nav>
             </div>
@@ -60,7 +61,7 @@
                     </div>
 
                     <div class="btn-get-started">
-                        <div class="btn"><a href="#">Hire me</a></div>
+                        <div class="btn"><a href="https://www.linkedin.com/in/nandan-kumar-82989b1b8/">Hire me</a></div>
                     </div>
 
 
@@ -82,6 +83,24 @@
             </div>
         </section> <!-- end of hero sectopn  -->
         <hr>
+
+        <!-- contact form  -->
+        <div class="contact-modal" id="contactModal">
+            <div class="contact-modal-content">
+                <span class="close" onclick="closeContactModal()">&times;</span>
+                <h2>Contact Me</h2>
+                <form id="contactForm" action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+
 
         <!-- work experience  -->
 
@@ -296,14 +315,14 @@
                     <div class="info">
                         <h2>Resume</h2>
                         <p>Click below to download my resume:</p>
-                        <a href="https://drive.google.com/file/d/1GKmmvJsCwGIy33ktaRLS7xyDQhY2NSx8/view?usp=sharing" target="_blank"
-                            rel="noopener noreferrer">Download Resume (PDF)</a>
+                        <a href="https://drive.google.com/file/d/1GKmmvJsCwGIy33ktaRLS7xyDQhY2NSx8/view?usp=sharing"
+                            target="_blank" rel="noopener noreferrer">Download Resume (PDF)</a>
                     </div>
                 </div>
 
                 <div class="ltd">
                     <p>&copy; 2024 Nandan kumar personal-portfolio. All rights reserved.</p>
-                    <p><a href="https://www.yourcompany.com">Visit our website</a></p>
+                    <p><a href="https://www.linkedin.com/in/nandan-kumar-82989b1b8/">Visit our website</a></p>
                 </div>
             </div>
         </footer>

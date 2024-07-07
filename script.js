@@ -32,4 +32,31 @@ var typed = new Typed('#element', {
     typeSpeed: 50,
   });
 
+
+//   contact form 
+
+// Get the modal
+var contactModal = document.getElementById('contactModal');
+
+// Function to open the modal
+function openContactModal() {
+    contactModal.style.display = 'block';
+}
+// Function to close the modal
+function closeContactModal() {
+    contactModal.style.display = 'none';
+}
+// Event listener for the Contact link in navbar
+document.querySelector('.right-navbar ul li:nth-child(8) a').addEventListener('click', function(event) {
+    event.preventDefault();
+    openContactModal();
+});
+
+// Close modal if user clicks outside the modal content
+window.onclick = function(event) {
+    if (event.target == contactModal) {
+        closeContactModal();
+    }
+};
+
   
